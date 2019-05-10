@@ -1,13 +1,8 @@
 
-# An example for training a multimodal DBM on a bioinformatical data set
+# Examples for using deep Boltzmann machines on bioinformatical data sets
 
-In the example presented here, a multimodal DBM is trained on genomic data from patients with acute myeloid leukemia (AML). The examined data set consists of data from 308 patients with SNP measurements, 319 patients with gene expression measurements and 26 patients with both measurements. For training the multimodal DBM, the [BoltzmannMachines](https://github.com/stefan-m-lenz/BoltzmannMachines.jl) Julia package is employed. It is shown how the resulting model can be used for dimensionality reduction.
+This repository showcases several examples for using deep Boltzmann machines (DBMs) employing the Julia package [BoltzmannMachines](https://github.com/stefan-m-lenz/BoltzmannMachines.jl). The examples are implemented as IJulia notebooks, which are best viewed in the Jupyter Notebook Viewer (click the links below). We show examples for:
 
-[The example is implemented as an IJulia notebook, best viewed in the Jupyter Notebook Viewer.](https://nbviewer.jupyter.org/github/stefan-m-lenz/BMs4BInf2019/blob/master/MultimodalDBMExample.ipynb)
-
-The data that is necessary for executing the example code is attached. It has been extracted from the following sources:
-
-[1] Hieke-Schulz, S. (2016). *SNP data from a clinical cohort of acute myeloid leukemia patients*. Harvard Dataverse.
-https://doi.org/10.7910/DVN/JUMDLX
-
-[2] Hieke, S. et. al. (2016). *Integrating multiple molecular sources into a clinical risk prediction signature by extracting complementary information*. BMC Bioinformatics. https://doi.org/10.1186/s12859-016-1183-6
+* training a [multimodal DBM](https://nbviewer.jupyter.org/github/stefan-m-lenz/BMs4BInf2019/blob/f125483dd00a497329cfd243ae5c7e6baa7d093a/multimodal_example/MultimodalDBMExample.ipynb) on a data set with SNP and gene expression data from patients with acute myeloid leukemia
+* comparing [DBMs and conditional generative adversarial networks](https://nbviewer.jupyter.org/github/stefan-m-lenz/BMs4BInf2019/blob/f125483dd00a497329cfd243ae5c7e6baa7d093a/cgan_vs_dbm_example/cganvsdbm.ipynb) with respect to conditional sampling on a data set with artificial gene expression and SNPs patterns
+* comparing the dimensionality reduction with [DBMs, PCA and t-SNE](https://nbviewer.jupyter.org/github/stefan-m-lenz/BMs4BInf2019/blob/f125483dd00a497329cfd243ae5c7e6baa7d093a/pca_tsne_dbm_example/pca_tsne_dbm.ipynb) on an single-cell RNA sequencing data set of neural cells.
